@@ -40,4 +40,4 @@ public class BoardgameRestController {
         return ResponseEntity.ok(boardgame.toJson().toString());
     }
     
-}
+} 
