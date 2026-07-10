@@ -1,0 +1,16 @@
+<!-- <app-cart (OnNewOrder)="processNewOrder($event)"></app-cart>
+<app-order [order] = "order" [name] = "customerName"></app-order> -->
+
+<table>
+    <tr>
+      <td>
+        <!-- @Output -->
+        <app-cart (onNewOrder)="processNewOrder($event)"></app-cart>
+      </td>
+      <td>
+        <!-- @Input -->
+        <app-order [order]="order" [name]="customerName"></app-order>
+      </td>
+    </tr>
+  </table>
+  
