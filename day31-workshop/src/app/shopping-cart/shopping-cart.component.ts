@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ShoppingCart } from './shopping-cart';
+import { ShoppingCart } from '../models/shopping-cart';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -8,4 +8,12 @@ import { ShoppingCart } from './shopping-cart';
 })
 export class ShoppingCartComponent {
   ShoppingCart: ShoppingCart[] = [];
+
+  items = [{ name: 'Acron Squash', imageUrl: 'acorn_squash' },
+  { name: 'Bell Pepper', imageUrl: 'bell_pepper'},
+  { name: 'Carrot', imageUrl: 'carrot'}];
+
+  addItem(newItem: any) {
+    this.items.push(newItem);
+  }
 }

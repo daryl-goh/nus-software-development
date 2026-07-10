@@ -9,3 +9,9 @@
         </tr>
     </tbody>
 </table>
+
+<app-inventory (newItemEvent)="addItem($event)"></app-inventory>
+
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+  </ul>

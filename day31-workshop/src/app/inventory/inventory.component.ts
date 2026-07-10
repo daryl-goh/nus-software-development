@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Inventory } from './inventory';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { Inventory } from '../models/inventory';
 
 @Component({
   selector: 'app-inventory',
@@ -7,13 +7,13 @@ import { Inventory } from './inventory';
   styleUrls: ['./inventory.component.css']
 })
 export class InventoryComponent {
+  inventory: Inventory[] = []; 
 
-  AddToCart(): void {
-    alert("Added to cart")
+  @Output() newItemEvent = new EventEmitter<string>();
 
-
+  addNewItem(value: string) {
+    this.newItemEvent.emit(value);
+    // alert("Added to cart")
   }
-
-  InventoryList: Inventory[] = [];
 
 }
