@@ -1,0 +1,27 @@
+<p>inventory works!</p>
+
+<table>
+  <thead></thead>
+  <tbody>
+    <tr *ngFor="let item of items">
+      <td><img src="../../assets/fruits/acorn_squash.png"></td>
+      <td>This is an acorn squash</td>
+      <td><button (click)="AddToCart()">Add</button></td>
+    </tr>
+    <tr>
+      <td><img src="../../assets/fruits/apple.png"></td>
+      <td>This is an apple</td>
+      <td><button (click)="AddToCart()">Add</button></td>
+    </tr>
+    <tr>
+      <td><img src="../../assets/fruits/bell_pepper.png"></td>
+      <td>This is a bell pepper</td>
+      <td><button (click)="AddToCart()">Add</button></td>
+    </tr>
+    <tr>
+      <td><img src="../../assets/fruits/blueberries.png"></td>
+      <td>These are blueberries</td>
+      <td><button (click)="AddToCart()">Add</button></td>
+    </tr>
+  </tbody>
+</table>
