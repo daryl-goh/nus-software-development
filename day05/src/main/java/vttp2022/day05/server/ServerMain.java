@@ -21,7 +21,7 @@ public class ServerMain {
         Socket sock = server.accept();
         System.out.println("Connection accepted");
 
-        // Get the input and output stream - bytes
+        // Get the input and output stream - bytes    
         // Get the input stream
         InputStream is = sock.getInputStream();
         DataInputStream dis = new DataInputStream(is);
