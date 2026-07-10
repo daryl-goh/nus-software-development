@@ -1,0 +1,4 @@
+sg\edu\nus\iss\day13wkshp\models\Contact.class
+sg\edu\nus\iss\day13wkshp\controllers\ContactController.class
+sg\edu\nus\iss\day13wkshp\services\DatabaseService.class
+sg\edu\nus\iss\day13wkshp\Day13wkshpApplication.class

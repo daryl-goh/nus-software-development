@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: sg.edu.nus.iss.day13wkshp.FunctionTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.022 s <<< FAILURE! - in sg.edu.nus.iss.day13wkshp.FunctionTest
+readContact  Time elapsed: 0 s  <<< ERROR!
+java.nio.file.NoSuchFileException: \Users\daryl\data\380dadfd
+	at sg.edu.nus.iss.day13wkshp.FunctionTest.readContact(FunctionTest.java:32)
+
