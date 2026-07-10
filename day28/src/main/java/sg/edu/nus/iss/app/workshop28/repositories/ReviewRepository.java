@@ -64,7 +64,7 @@ public class ReviewRepository {
     }
 
     /**
-     db.game.aggregate([ { $match: { gid: 17 } }, { $lookup: { from: "reviews",
+     db.game.aggregate([ { $match: { gid: 30 } }, { $lookup: { from: "reviews",
      localField: "gid", foreignField: "gameId", as: "reviewsDocs" } }, { $project:
      { _id: 1, gid: 1, name: 1, year: 1, ranking: 1, users_rated: 1, url: 1,
      image: 1, reviews: "$reviewsDocs._id", timestamp: "$$NOW" } }]);
