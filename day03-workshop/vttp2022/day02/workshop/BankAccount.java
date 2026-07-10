@@ -11,7 +11,7 @@ public class BankAccount {
     private float balance = 0;
     private List<String> transaction = new LinkedList<>();
 
-    //public BankAccount() { }
+    public BankAccount() { }
 
     public BankAccount(String name) {
         this.name = name;
